@@ -1,0 +1,55 @@
+$namespace: 'mx'; // change the 'mx' to 'mx'. then <date-picker prefix-class="mx" />
+
+
+.mx-input {
+  border-radius: 8px !important;
+  background-color: #ffffff !important;
+  height: 48px !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  border: 1px solid rgba(82, 82, 91, 0.25) !important;
+  padding: 12px 16px !important;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+
+  &:focus {
+    border-color: #000000 !important;
+  }
+}
+
+.mx-time-item {
+  &:hover {
+    background: rgba(0, 0, 0, 0.04) !important;
+  }
+}
+
+.mx-datepicker-main  {
+  border-radius: 6px;
+  overflow: hidden;
+  border: none !important;
+  background-color: #ffffff !important;
+}
+
+.mx-datepicker {
+  width: 100% !important;
+  height: 48px;
+}
+
+/*.mx-icon-calendar, .mx-icon-clear {
+  color: rgba(var(--textColor), 0.5) !important;
+}
+
+.mx-calendar-content .cell.in-range, .mx-calendar-content .cell.hover-in-range {
+  background-color: rgba(var(--primary), 0.2) !important;
+}
+
+.mx-calendar-content .cell:hover {
+  background-color: rgba(var(--primary), 0.2) !important;
+}
+
+.mx-input-wrapper {
+
+}*/
+
+@import '~vue-datepicker-next/scss/index.scss';

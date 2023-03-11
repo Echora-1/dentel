@@ -1,0 +1,101 @@
+<template>
+  <div :class="['card', { 'card--reverse': content.reverse }]">
+    <img
+      :src="require('../../assets/images/doctors/' + content.img + '.png')"
+      width="540"
+      height="540"
+      alt="doctors"
+      class="card__img"
+    />
+    <div class="card__content">
+      <p class="card__name">{{ content.name }}</p>
+      <p class="card__position">{{ content.position }}</p>
+      <p class="text">
+        {{ content.text }}
+      </p>
+      <div class="card__btns">
+        <base-button>Book Appointment</base-button>
+        <base-button transparent>Read More</base-button>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import BaseButton from "@/components/base/BaseButton.vue";
+
+export default {
+  components: { BaseButton },
+  props: {
+    content: {
+      type: Object,
+      default: () => {
+        return {
+          name: "Dr. Ann May",
+          position: "General Orthodontist",
+          text: "Personable dentist with 12 years of experience improving oral health so that patients can smile confidently. Skills include ICON Aesthetic Infiltration, Restorative Procedures, Crowns, Bridges & Veneers, and ICON Aesthetic Infiltration.",
+          img: "d1@2x",
+          reverse: false,
+        };
+      },
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.text {
+  max-width: 660px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    object-fit: contain;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+  }
+
+  &__content {
+    padding-left: 30px;
+    margin-left: auto;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 34px;
+    margin: 0 0 20px;
+  }
+
+  &__position {
+    font-style: italic;
+    font-size: 27px;
+    line-height: 110%;
+    color: rgba(38, 38, 38, 0.7);
+    display: inline-block;
+    margin: 0 0 30px;
+    padding-bottom: 27px;
+    border-bottom: 1px solid rgba(82, 82, 91, 0.3);
+  }
+
+  &__btns {
+    margin-top: 30px;
+    display: flex;
+
+    button:first-child {
+      margin-right: 28px;
+    }
+  }
+
+  &--reverse {
+    .card__content {
+      order: -1;
+      padding-right: 30px;
+      margin-right: auto;
+    }
+  }
+}
+</style>
