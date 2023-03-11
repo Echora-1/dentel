@@ -3,7 +3,7 @@
     <div class="container footer__wrap">
       <div class="footer__item">
         <img
-          src="../../assets/images/logo@2x.png"
+          src="../../assets/images/white-logo.png"
           width="153"
           height="63"
           alt="logo"
@@ -13,6 +13,11 @@
           NextGen Dental & Orthodontics is your Wheeling dentist. We are
           committed to providing the best dental services for patients
         </p>
+        <div class="footer__social">
+          <a href=""><IconInst /></a>
+          <a href=""><IconWhat /></a>
+          <a href=""><IconFace /></a>
+        </div>
       </div>
       <div class="footer__item">
         <p class="footer__title">We are welcoming you</p>
@@ -42,6 +47,7 @@
         <p class="footer__text">XXX XXXX</p>
       </div>
     </div>
+    <div class="copir">© 2023, All Rights Reserved</div>
   </footer>
 </template>
 
@@ -49,36 +55,87 @@
 .footer {
   min-height: 380px;
   background: #0c7ac2;
-  padding: 60px 0;
+  padding: 60px 0 0;
+
+  @media (max-width: 1000px) {
+    padding: 45px 0 0;
+  }
 
   &__wrap {
     display: flex;
     color: #ffffff;
+    margin-bottom: 60px;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 45px;
+    }
   }
 
   &__item {
-    width: calc(25%);
-    &:not(:last-child) {
-      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    @media (min-width: 1001px) {
+      width: calc(25%);
+
+      &:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      &:first-child {
+        padding-right: 60px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+
+      &:last-child {
+        padding-left: 60px;
+      }
     }
 
-    &:first-child {
-      padding-right: 60px;
-    }
+    @media (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
-    &:nth-child(2),
-    &:nth-child(3) {
-      padding-right: 30px;
-      padding-left: 30px;
-    }
+      &:nth-child(2) {
+        margin-bottom: 32px;
+        .footer__text {
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 1px;
+        }
+      }
 
-    &:last-child {
-      padding-left: 60px;
+      &:nth-child(3) {
+        display: none;
+      }
+
+      &:nth-child(4) {
+        .footer__title {
+          font-size: 20px;
+          line-height: 20px;
+        }
+        .footer__text {
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 1px;
+        }
+      }
     }
   }
 
   &__logo {
     margin-bottom: 27px;
+
+    @media (max-width: 1000px) {
+      max-width: 129px;
+      max-height: 53px;
+      object-fit: contain;
+    }
   }
 
   &__text {
@@ -86,6 +143,14 @@
     line-height: 24px;
     margin: 0;
     max-width: 280px;
+
+    @media (max-width: 1000px) {
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      margin-bottom: 28px;
+    }
   }
 
   &__title {
@@ -93,6 +158,12 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0 0 32px;
+
+    @media (max-width: 1000px) {
+      font-size: 15px;
+      line-height: 20px;
+      margin: 0 0 10px;
+    }
   }
 
   &__subtitle {
@@ -101,6 +172,13 @@
     line-height: 40px;
     margin: 0 0 40px;
     max-width: 222px;
+
+    @media (max-width: 1000px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin: 0 0 12px;
+      max-width: 200px;
+    }
   }
 
   &__links {
@@ -126,6 +204,45 @@
 
   &__email {
     margin: 40px 0 32px;
+    @media (max-width: 1000px) {
+      margin: 8px 0 25px;
+    }
+  }
+
+  &__social {
+    display: none;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+
+      a:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
   }
 }
+.copir {
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+
+  text-align: center;
+
+  /* White/Primary */
+  min-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+  background: #282828;
+}
 </style>
+<script setup>
+import IconInst from "@/components/icon/IconInst.vue";
+import IconWhat from "@/components/icon/IconWhat.vue";
+import IconFace from "@/components/icon/IconFace.vue";
+</script>

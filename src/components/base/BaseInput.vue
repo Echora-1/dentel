@@ -124,6 +124,12 @@ export default {
   position: relative;
   transition: color 0.3s;
   resize: none;
+  text-overflow: ellipsis;
+
+  @media (max-width: 1000px) {
+    font-size: 14px;
+    line-height: 15px;
+  }
 
   @media (max-width: 767px) {
     padding: 10px 20px;

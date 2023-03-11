@@ -67,6 +67,12 @@ export default {
   position: relative;
   text-transform: capitalize;
 
+  @media (max-width: 1000px) {
+    font-size: 9px;
+    line-height: 11px;
+    padding: 7px 19px;
+  }
+
   &:active {
     opacity: 0.85;
     transform: translateY(1px);
@@ -86,6 +92,10 @@ export default {
     color: #52525b;
     padding: 15px 40px;
     background: transparent;
+
+    @media (max-width: 1000px) {
+      padding: 8px 19px;
+    }
 
     .loader {
       color: #52525b;

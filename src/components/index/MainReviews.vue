@@ -1,6 +1,7 @@
 <template>
   <section class="reviews">
     <div class="container reviews__wrap">
+      <h2 class="base-title">Testimonials</h2>
       <swiper
         :spaceBetween="30"
         :pagination="{
@@ -18,6 +19,16 @@
 </template>
 
 <style lang="scss" scoped>
+.base-title {
+  display: none;
+
+  @media (max-width: 1000px) {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+}
 .reviews {
   background-image: url("@/assets/images/reviews-bg.svg");
   background-repeat: no-repeat;
@@ -26,6 +37,11 @@
   min-height: 553px;
   display: flex;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    min-height: 420px;
+    text-align: center;
+  }
 }
 </style>
 <script>
@@ -69,11 +85,22 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 42px;
   left: 70%;
   transform: translateX(-50%);
+
+  @media (max-width: 1000px) {
+    left: 50%;
+    bottom: -20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .swiper {
+    overflow: visible;
+  }
 }
 </style>

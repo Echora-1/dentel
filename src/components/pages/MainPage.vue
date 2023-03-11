@@ -32,15 +32,30 @@ export default {
 .section-services {
   margin-top: 82px;
   margin-bottom: 62px;
+
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .section-doctors {
   margin-top: 85px;
   margin-bottom: 102px;
+
+  @media (max-width: 1000px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .section-contact {
   padding-top: 87px;
   padding-bottom: 107px;
+
+  @media (max-width: 1000px) {
+    padding-top: 40px;
+    padding-bottom: 58px;
+  }
 }
 </style>

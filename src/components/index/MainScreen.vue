@@ -59,11 +59,27 @@
 <style lang="scss" scoped>
 .base-title {
   margin-bottom: 24px;
+
+  @media (max-width: 1000px) {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
 }
 
 .text {
   line-height: 26px;
   margin-bottom: 64px;
+
+  @media (max-width: 1000px) {
+    text-align: center;
+    font-size: 13px;
+    line-height: 16px;
+    max-width: 365px;
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .main-screen {
@@ -76,6 +92,11 @@
     flex-grow: 1;
     display: flex;
     align-items: center;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__left,
@@ -83,11 +104,21 @@
     flex: 50%;
     max-width: 50%;
     width: 100%;
+
+    @media (max-width: 1000px) {
+      flex: 100%;
+      max-width: 100%;
+    }
   }
 
   &__right {
     margin-top: auto;
     justify-self: flex-end;
+
+    @media (max-width: 1000px) {
+      display: flex;
+      align-items: flex-end;
+    }
   }
 
   &__btns {
@@ -96,6 +127,14 @@
 
     button:first-child {
       margin-right: 24px;
+    }
+
+    @media (max-width: 1000px) {
+      justify-content: center;
+
+      button:first-child {
+        margin-right: 14px;
+      }
     }
   }
 
@@ -113,6 +152,11 @@
       height: 100%;
       object-fit: contain;
     }
+
+    @media (max-width: 1000px) {
+      margin-left: unset;
+      margin-bottom: -5px;
+    }
   }
 
   &__footer {
@@ -122,6 +166,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 250px;
+
+    @media (max-width: 1000px) {
+      background-position: right;
+    }
   }
 }
 
@@ -130,22 +178,45 @@
   align-items: center;
   color: #ffffff;
 
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 22px 0 26px;
+    text-align: center;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 42px;
     line-height: 46px;
     margin: 0 0 16px;
+
+    @media (max-width: 1000px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin: 0 0 8px;
+      max-width: 230px;
+    }
   }
 
   &__subtitle {
     font-size: 24px;
     line-height: 32px;
     margin: 0;
+
+    @media (max-width: 1000px) {
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 26px;
+    }
   }
 
   &__items {
     display: flex;
     margin-left: auto;
+
+    @media (max-width: 1000px) {
+      margin: 0 auto;
+    }
   }
 
   &__item {
@@ -160,10 +231,24 @@
       margin-right: 50px;
     }
 
+    @media (max-width: 1000px) {
+      padding: 16px 20px;
+      max-width: 140px;
+
+      &:first-child {
+        margin-right: 23px;
+      }
+    }
+
     svg {
       width: 38px;
       height: 38px;
       margin-bottom: 16px;
+
+      @media (max-width: 1000px) {
+        width: 27px;
+        height: 27px;
+      }
     }
 
     p {
@@ -174,6 +259,11 @@
       color: #52525b;
       max-width: 124px;
       margin: 0;
+
+      @media (max-width: 1000px) {
+        font-size: 13px;
+        line-height: 16px;
+      }
     }
   }
 }

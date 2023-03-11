@@ -43,7 +43,9 @@ export default {
 
 <style lang="scss" scoped>
 .base-title {
-  line-height: 74px;
+  @media (min-width: 1001px) {
+    line-height: 74px;
+  }
 }
 
 .doctors {
@@ -51,10 +53,19 @@ export default {
     text-align: end;
     padding-bottom: 8px;
     border-bottom: 1px solid rgba(82, 82, 91, 0.3);
+
+    @media (max-width: 1000px) {
+      border-bottom: none;
+      text-align: center;
+    }
   }
 
   &__list {
     padding-top: 78px;
+
+    @media (max-width: 1000px) {
+      padding-top: 36px;
+    }
   }
 
   &__item {

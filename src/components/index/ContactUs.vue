@@ -30,11 +30,29 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #bcbcbc;
     margin-bottom: 100px;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 30px;
+      padding-bottom: 0;
+      border-bottom: none;
+      text-align: center;
+    }
   }
 
   &__main {
     display: flex;
     align-items: center;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    @media (max-width: 1000px) {
+      position: relative;
+      margin-bottom: 240px;
+      width: 100%;
+    }
   }
 
   &__right {
@@ -44,6 +62,19 @@
   &__img {
     object-fit: contain;
     border-radius: 15px;
+
+    @media (max-width: 1000px) {
+      position: absolute;
+      max-width: 440px;
+      max-height: 240px;
+      left: 50%;
+      top: 0;
+      object-fit: cover;
+      object-position: bottom;
+      transform: translateX(-50%);
+      width: calc(100% + 40px);
+      border-radius: 0;
+    }
   }
 }
 </style>

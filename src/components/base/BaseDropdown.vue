@@ -167,6 +167,11 @@ export default {
   color: rgb(0, 0, 0);
   background-color: transparent;
   position: relative;
+
+  @media (max-width: 1000px) {
+    font-size: 14px;
+    line-height: 15px;
+  }
 }
 
 .base-input::placeholder {

@@ -154,6 +154,12 @@ export default {
   padding-left: 30px;
   margin-left: auto;
 
+  @media (max-width: 1000px) {
+    padding-top: 30px;
+    padding-left: 0;
+    min-height: 478px;
+  }
+
   &__form {
     width: 100%;
     display: flex;
@@ -171,11 +177,29 @@ export default {
     &:nth-child(even) {
       margin-left: 20px;
     }
+
+    @media (max-width: 1000px) {
+      width: calc(50% - 10px);
+
+      &:nth-child(odd) {
+        margin-right: 10px;
+      }
+
+      &:nth-child(even) {
+        margin-left: 10px;
+      }
+    }
   }
 
   &__btn {
     margin-top: auto;
     width: 100%;
+
+    @media (max-width: 1000px) {
+      font-size: 14px !important;
+      line-height: 16px !important;
+      padding: 12px 40px !important;
+    }
   }
 
   &__checkbox {

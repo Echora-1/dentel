@@ -11,7 +11,7 @@
       <nav class="header__nav">
         <a class="header__phone">
           <icon-phone />
-          +(847) 947-2651
+          <span> +(847) 947-2651 </span>
         </a>
         <base-button>Book Appointment</base-button>
       </nav>
@@ -70,6 +70,28 @@ export default {
 
     svg {
       margin-right: 12px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    &__logo {
+      width: 78px;
+      height: 32px;
+    }
+
+    &__phone {
+      margin-right: 20px;
+      span {
+        display: none;
+      }
+
+      svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 0;
+      }
     }
   }
 }

@@ -3,6 +3,12 @@
     <div class="container about__wrap">
       <div class="about__left">
         <h2 class="base-title">About <span>our clinic</span></h2>
+        <p class="about__mb-text">
+          At our Clinic, your comfort is our highest priority for family dental
+          care. You can relax in our dental chair knowing that we offer the
+          latest advances in the industry. As specialized practitioners, we are
+          comfortable with patients of all ages.
+        </p>
         <img
           class="about__img"
           src="../../assets/images/about@2x.png"
@@ -67,6 +73,11 @@ export default {
 .base-title {
   margin-top: 42px;
   margin-bottom: 56px;
+
+  @media (max-width: 1000px) {
+    margin-top: 25px;
+    margin-bottom: 11px;
+  }
 }
 
 .text {
@@ -86,6 +97,10 @@ export default {
     left: 0;
     transform: translateX(-100%);
   }
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .about {
@@ -93,11 +108,11 @@ export default {
 
   &__wrap {
     display: flex;
-  }
 
-  &__left,
-  &__right {
-    padding-top: 72px;
+    @media (max-width: 1000px) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__left {
@@ -119,28 +134,91 @@ export default {
       top: 0;
       z-index: -1;
     }
+
+    @media (max-width: 1000px) {
+      &::before {
+        right: unset;
+        width: 1000px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &__left,
+  &__right {
+    padding-top: 72px;
+
+    @media (max-width: 1000px) {
+      padding-top: 0;
+      max-width: 100%;
+      width: 100%;
+      position: relative;
+    }
   }
 
   &__right {
     flex-grow: 1;
   }
 
+  &__mb-text {
+    display: none;
+
+    @media (max-width: 1000px) {
+      display: inline;
+      font-size: 13px;
+      line-height: 16px;
+      max-width: 320px;
+      margin: 0 auto 248px;
+    }
+  }
+
   &__img {
     margin-top: auto;
+
+    @media (max-width: 1000px) {
+      max-width: 440px;
+      width: calc(100% + 50px);
+      max-height: 220px;
+      object-fit: cover;
+      object-position: center;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      right: 0;
+      transform: translateX(-50%);
+    }
   }
 
   &__what {
-    padding-left: 72px;
+    @media (min-width: 1001px) {
+      padding-left: 72px;
+    }
   }
 
   &__items {
     display: flex;
     margin-bottom: 107px;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 45px;
+    }
   }
 
   &__list {
     &:first-child {
       margin-right: 85px;
+    }
+
+    @media (max-width: 1000px) {
+      &:first-child {
+        margin-left: auto;
+        margin-right: 30px;
+      }
+
+      &:last-child {
+        margin-right: auto;
+      }
     }
   }
 
@@ -157,6 +235,18 @@ export default {
 
     svg {
       margin-right: 16px;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0 0 13px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 9px;
+      }
     }
   }
 
@@ -176,6 +266,19 @@ export default {
       color: #0c74b5;
       display: inline-block;
       margin-right: 16px;
+    }
+
+    @media (max-width: 1000px) {
+      margin-top: 26px;
+      margin-bottom: 26px;
+      flex-direction: column;
+      font-size: 15px;
+      line-height: 34px;
+
+      span {
+        font-size: 30px;
+        line-height: 34px;
+      }
     }
   }
 }
