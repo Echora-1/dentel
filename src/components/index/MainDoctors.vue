@@ -9,18 +9,25 @@
         v-for="(item, index) in list"
         :key="index"
         :content="item"
+        @click="showModal = true"
       />
     </div>
+    <base-modal :is-open="showModal" @close="showModal = false">
+      <doctors-modal />
+    </base-modal>
   </section>
 </template>
 
 <script>
 import DoctorCard from "@/components/index/DoctorCard.vue";
+import BaseModal from "@/components/base/BaseModal.vue";
+import DoctorsModal from "@/components/index/DoctorsModal.vue";
 export default {
-  components: { DoctorCard },
+  components: { DoctorsModal, BaseModal, DoctorCard },
 
   data() {
     return {
+      showModal: false,
       list: [
         {
           name: "Dr. Ann May",
