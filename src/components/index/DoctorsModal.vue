@@ -26,7 +26,7 @@
           :navigation="true"
         >
           <swiper-slide>
-            <fullscreen v-model="fullscreen" :teleport="true">
+            <fullscreen v-model="fullscreen">
               <img
                 @click="toggle"
                 src="../../assets/images/diploms/all.png"
