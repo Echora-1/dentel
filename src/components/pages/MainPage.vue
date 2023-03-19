@@ -3,9 +3,9 @@
     <MainScreen />
     <MainServices class="section-services" />
     <MainAbout />
-    <MainDoctors class="section-doctors" />
+    <MainDoctors id="doctors" class="section-doctors" />
     <MainReviews />
-    <ContactUs class="section-contact" />
+    <ContactUs id="contact" class="section-contact" />
   </div>
 </template>
 

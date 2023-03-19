@@ -15,7 +15,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">General Dentistry</p>
+          <p class="card__title">Dental Emergency</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>
@@ -30,7 +30,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Invisalign</p>
+          <p class="card__title">Orthodontic Treatment</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>
@@ -45,7 +45,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Braces</p>
+          <p class="card__title">Dental Crown</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>
@@ -60,7 +60,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Cosmetic Dentistry</p>
+          <p class="card__title">Dental Extraction and Implants</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>

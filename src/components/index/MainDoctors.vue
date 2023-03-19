@@ -22,6 +22,7 @@
 import DoctorCard from "@/components/index/DoctorCard.vue";
 import BaseModal from "@/components/base/BaseModal.vue";
 import DoctorsModal from "@/components/index/DoctorsModal.vue";
+
 export default {
   components: { DoctorsModal, BaseModal, DoctorCard },
 
@@ -30,9 +31,9 @@ export default {
       showModal: false,
       list: [
         {
-          name: "Dr. Ann May",
+          name: "Dr. Kateryna Yuryk",
           position: "General Orthodontist",
-          text: "Personable dentist with 12 years of experience improving oral health so that patients can smile confidently. Skills include ICON Aesthetic Infiltration, Restorative Procedures, Crowns, Bridges & Veneers, and ICON Aesthetic Infiltration.",
+          text: "Kateryna Yuryk, CRDH is a 2007 graduate of the dental hygiene program at the University of Illinois Chicago College of Dentistry. Every year Kateryna takes continued education classes to implement the newest technologies in patient care.",
           img: "d1@2x",
         },
         {

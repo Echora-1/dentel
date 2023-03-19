@@ -14,9 +14,15 @@
           committed to providing the best dental services for patients
         </p>
         <div class="footer__social">
-          <a href=""><IconInst /></a>
+          <a
+            href="https://instagram.com/oasisdentalhallandale?igshid=NDk5N2NlZjQ="
+            ><IconInst
+          /></a>
           <a href=""><IconWhat /></a>
-          <a href=""><IconFace /></a>
+          <a
+            href="https://www.facebook.com/people/OasisDental/100072089651296/?mibextid=LQQJ4d"
+            ><IconFace
+          /></a>
         </div>
       </div>
       <div class="footer__item">
@@ -30,12 +36,10 @@
         <div class="footer__links">
           <div class="footer__links-list">
             <a href="">Facebook</a>
-            <a href="">Twitter</a>
             <a href="">Instagram</a>
           </div>
           <div class="footer__links-list">
             <a href="">Career</a>
-            <a href="">Support</a>
             <a href="">Privacy policy</a>
           </div>
         </div>

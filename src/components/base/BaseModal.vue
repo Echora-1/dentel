@@ -59,7 +59,7 @@ export default {
 }
 
 .modal-content {
-  background: #ffffff;
+  background: transparent;
   overflow: hidden;
 }
 

@@ -10,47 +10,98 @@
       />
     </div>
     <div class="modal__content">
-      <p class="modal__name">Dr. Ann May</p>
+      <p class="modal__name">Dr. Kateryna Yuryk</p>
       <p class="modal__position">General Orthodontist</p>
       <p class="modal__text">
-        Personable dentist with 12 years of experience improving oral health so
-        that patients can smile confidently. Skills include ICON Aesthetic
-        Infiltration, Restorative Procedures, Crowns, Bridges & Veneers, and
-        ICON Aesthetic Infiltration. Personable dentist with 12 years of
-        experience improving oral health so that patients can smile confidently.
-        Skills include ICON Aesthetic Infiltration, Restorative Procedures,
-        Crowns, Bridges & Veneers, and ICON Aesthetic Infiltration.
+        Kateryna Yuryk, CRDH is a 2007 graduate of the dental hygiene program at
+        the University of Illinois Chicago College of Dentistry. Every year
+        Kateryna takes continued education classes to implement the newest
+        technologies in patient care.
       </p>
       <div class="modal__slide">
-        <img
-          src="../../assets/images/modal/s1.png"
-          width="124"
-          height="142"
-          alt=""
-        />
-        <img
-          src="../../assets/images/modal/s2.png"
-          width="124"
-          height="142"
-          alt=""
-        />
-        <img
-          src="../../assets/images/modal/s3.png"
-          width="124"
-          height="142"
-          alt=""
-        />
+        <swiper
+          :modules="modules"
+          :slides-per-view="3"
+          :space-between="30"
+          :navigation="true"
+        >
+          <swiper-slide>
+            <fullscreen v-model="fullscreen" :teleport="true">
+              <img
+                @click="toggle"
+                src="../../assets/images/diploms/all.png"
+                width="124"
+                height="142"
+                alt=""
+                v-if="!fullscreen"
+              />
+              <div v-else class="fullscreen-wrap" @click="toggle">
+                <img
+                  src="../../assets/images/diploms/all.png"
+                  width="622"
+                  height="480"
+                  alt=""
+                  style="margin: auto"
+                />
+              </div>
+            </fullscreen>
+          </swiper-slide>
+          <swiper-slide>
+            <img
+              src="../../assets/images/diploms/kateryna.png"
+              width="124"
+              height="142"
+              alt=""
+            />
+          </swiper-slide>
+          <swiper-slide>
+            <img
+              src="../../assets/images/diploms/kateryna1.png"
+              width="124"
+              height="142"
+              alt=""
+            />
+          </swiper-slide>
+        </swiper>
       </div>
       <base-button class="modal__btn">Book Appointment</base-button>
     </div>
   </div>
 </template>
 
+<script>
+import BaseButton from "@/components/base/BaseButton.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/core";
+export default {
+  components: { BaseButton, Swiper, SwiperSlide },
+
+  data() {
+    return {
+      fullscreen: false,
+    };
+  },
+
+  methods: {
+    toggle() {
+      this.fullscreen = !this.fullscreen;
+    },
+  },
+
+  setup() {
+    return {
+      modules: [Navigation],
+    };
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 .modal {
   min-height: 720px;
   height: 100%;
-  width: 556px;
+  width: 700px;
 
   @media (max-width: 767px) {
     width: calc(100vw - 60px);
@@ -60,10 +111,8 @@
   }
 
   &__header {
-    background: #deeefb;
     min-height: 122px;
     position: relative;
-    margin-bottom: 105px;
 
     @media (max-width: 767px) {
       min-height: 80px;
@@ -88,11 +137,12 @@
   }
 
   &__content {
-    padding: 0 30px 32px;
+    padding: 105px 30px 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: white;
   }
 
   &__name {
@@ -116,19 +166,19 @@
 
   &__text {
     margin: 20px 0 46px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 22px;
     color: #777777;
+    max-width: 435px;
   }
 
   &__slide {
+    max-width: 80%;
     margin-bottom: 46px;
     img {
       object-fit: contain;
 
       &:not(:last-child) {
-        margin-right: 20px;
-
         @media (max-width: 767px) {
           display: none;
         }
@@ -141,7 +191,15 @@
     line-height: 17px;
   }
 }
+
+.fullscreen-wrap {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 </style>
-<script setup>
-import BaseButton from "@/components/base/BaseButton.vue";
-</script>

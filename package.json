@@ -15,6 +15,7 @@
     "swiper": "^8.4.6",
     "vue": "^3.2.13",
     "vue-datepicker-next": "^1.0.2",
+    "vue-fullscreen": "^3.1.1",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {

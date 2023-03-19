@@ -11,8 +11,8 @@
           services that can improve your smile.
         </p>
         <div class="main-screen__btns">
-          <base-button> Contact Us </base-button>
-          <base-button black> Learn More </base-button>
+          <a href="#contact"><base-button> Contact Us </base-button></a>
+          <a href="#doctors"><base-button black> Learn More </base-button></a>
         </div>
       </div>
       <div class="main-screen__right">

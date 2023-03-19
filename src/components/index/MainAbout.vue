@@ -9,13 +9,55 @@
           latest advances in the industry. As specialized practitioners, we are
           comfortable with patients of all ages.
         </p>
-        <img
-          class="about__img"
-          src="../../assets/images/about@2x.png"
-          width="558"
-          height="480"
-          alt="about"
-        />
+        <div class="about__img">
+          <swiper
+            :modules="modules"
+            :slides-per-view="1"
+            :space-between="0"
+            :centeredSlides="true"
+            :autoplay="{
+              delay: 2500,
+              disableOnInteraction: false,
+            }"
+            :navigation="true"
+          >
+            <swiper-slide>
+              <img
+                src="../../assets/images/about@2x.png"
+                width="558"
+                height="480"
+                alt="about"
+            /></swiper-slide>
+            <swiper-slide>
+              <img
+                src="../../assets/images/about@2x.png"
+                width="558"
+                height="480"
+                alt="about"
+            /></swiper-slide>
+            <swiper-slide>
+              <img
+                src="../../assets/images/about@2x.png"
+                width="558"
+                height="480"
+                alt="about"
+            /></swiper-slide>
+            <swiper-slide>
+              <img
+                src="../../assets/images/about@2x.png"
+                width="558"
+                height="480"
+                alt="about"
+            /></swiper-slide>
+            <swiper-slide>
+              <img
+                src="../../assets/images/about@2x.png"
+                width="558"
+                height="480"
+                alt="about"
+            /></swiper-slide>
+          </swiper>
+        </div>
       </div>
       <div class="about__right">
         <p class="text">
@@ -27,6 +69,23 @@
 
         <div class="about__what">
           <p class="about__title"><span>?</span> WHAT WE PROVIDE</p>
+          <p>
+            NextGen Dental & Orthodontics is committed to providing the best
+            dental services for patients in Miami, FL and the surrounding area.
+            Not only do we take pride in the quality of care that we offer, but
+            we are also dedicated to implementing the latest technology that is
+            available in the dental industry. We invite you to visit our office
+            to learn about our excellent services that can improve your smile.
+            Our office is designed with your comfort in mind. We focus on the
+            details that will improve your experience: beautiful décor,
+            comfortable chairs, and high-quality treatments. You can relax
+            knowing that you selected a dental team that you can trust.
+            Sanitation and safety are priorities for our team. We are thorough
+            with hygiene while using the leading technological advances in the
+            industry. These quality tools provide optimal results for your
+            dental care. Staying up-to-date in the dental industry allows us to
+            offer the best treatments focused on accuracy and efficiency.
+          </p>
           <div class="about__items">
             <div class="about__list">
               <p class="about__item" v-for="(item, index) in list" :key="index">
@@ -53,8 +112,12 @@
 
 <script>
 import IconSec from "@/components/icon/IconSec.vue";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css/navigation";
+import { Autoplay, Navigation } from "swiper/core";
+
 export default {
-  components: { IconSec },
+  components: { IconSec, Swiper, SwiperSlide },
   data() {
     return {
       list: [
@@ -64,6 +127,12 @@ export default {
         "Dental Fillings",
       ],
       list2: ["Veneers", "Whitening", "Orthodontics", "Dental Implants"],
+    };
+  },
+
+  setup() {
+    return {
+      modules: [Autoplay, Navigation],
     };
   },
 };
@@ -188,6 +257,21 @@ export default {
       right: 0;
       transform: translateX(-50%);
     }
+
+    &:deep {
+      .swiper-button-prev,
+      .swiper-button-next {
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+    }
+
+    &:hover:deep {
+      .swiper-button-prev,
+      .swiper-button-next {
+        opacity: 1;
+      }
+    }
   }
 
   &__what {
@@ -257,8 +341,7 @@ export default {
     color: #282828;
     display: flex;
     align-items: center;
-    margin-top: 97px;
-    margin-bottom: 42px;
+    margin: 42px 0;
 
     span {
       font-size: 48px;

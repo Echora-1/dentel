@@ -9,7 +9,17 @@
         class="header__logo"
       />
       <nav class="header__nav">
-        <a class="header__phone">
+        <a
+          class="header__nav-icon"
+          href="https://instagram.com/oasisdentalhallandale?igshid=NDk5N2NlZjQ="
+          ><IconInst
+        /></a>
+        <a
+          class="header__nav-icon"
+          href="https://www.facebook.com/people/OasisDental/100072089651296/?mibextid=LQQJ4d"
+          ><IconFace
+        /></a>
+        <a class="header__phone" href="tel:3052399855">
           <icon-phone />
           <span> +(847) 947-2651 </span>
         </a>
@@ -21,9 +31,11 @@
 <script>
 import IconPhone from "@/components/icon/IconPhone.vue";
 import BaseButton from "@/components/base/BaseButton.vue";
+import IconInst from "@/components/icon/IconInst.vue";
+import IconFace from "@/components/icon/IconFace.vue";
 
 export default {
-  components: { BaseButton, IconPhone },
+  components: { IconFace, IconInst, BaseButton, IconPhone },
 
   data() {
     return {
@@ -59,6 +71,14 @@ export default {
 
   &__nav {
     display: flex;
+    align-items: center;
+  }
+
+  &__nav-icon {
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    color: #0c74b5;
   }
 
   &__phone {
@@ -91,6 +111,13 @@ export default {
         width: 18px;
         height: 18px;
         margin-right: 0;
+      }
+    }
+
+    &__nav-icon {
+      svg {
+        width: 18px;
+        height: 18px;
       }
     }
   }
