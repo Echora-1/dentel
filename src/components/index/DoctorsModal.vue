@@ -27,7 +27,7 @@
         >
           <swiper-slide>
             <img
-              @click="toggle"
+              @click="fullscreen = !fullscreen"
               src="../../assets/images/diploms/all.png"
               width="124"
               height="142"
@@ -36,6 +36,7 @@
           </swiper-slide>
           <swiper-slide>
             <img
+              @click="fullscreen1 = !fullscreen1"
               src="../../assets/images/diploms/kateryna.png"
               width="124"
               height="142"
@@ -44,6 +45,7 @@
           </swiper-slide>
           <swiper-slide>
             <img
+              @click="fullscreen2 = !fullscreen2"
               src="../../assets/images/diploms/kateryna1.png"
               width="124"
               height="142"
@@ -55,11 +57,45 @@
       <base-button class="modal__btn">Book Appointment</base-button>
     </div>
     <fullscreen v-model="fullscreen">
-      <div v-if="fullscreen" class="fullscreen-wrap" @click="toggle">
+      <div
+        v-if="fullscreen"
+        class="fullscreen-wrap"
+        @click="fullscreen = false"
+      >
         <img
           src="../../assets/images/diploms/all.png"
           width="622"
           height="480"
+          alt=""
+          style="margin: auto"
+        />
+      </div>
+    </fullscreen>
+    <fullscreen v-model="fullscreen1">
+      <div
+        v-if="fullscreen1"
+        class="fullscreen-wrap"
+        @click="fullscreen1 = false"
+      >
+        <img
+          src="../../assets/images/diploms/kateryna.png"
+          width="622"
+          height="480"
+          alt=""
+          style="margin: auto"
+        />
+      </div>
+    </fullscreen>
+    <fullscreen v-model="fullscreen2">
+      <div
+        v-if="fullscreen2"
+        class="fullscreen-wrap"
+        @click="fullscreen2 = false"
+      >
+        <img
+          src="../../assets/images/diploms/kateryna1.png"
+          width="622"
+          height="476"
           alt=""
           style="margin: auto"
         />
@@ -79,13 +115,9 @@ export default {
   data() {
     return {
       fullscreen: false,
+      fullscreen1: false,
+      fullscreen2: false,
     };
-  },
-
-  methods: {
-    toggle() {
-      this.fullscreen = !this.fullscreen;
-    },
   },
 
   setup() {
