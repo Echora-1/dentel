@@ -55,7 +55,7 @@ export default {
 
   @media (max-width: 1000px) {
     padding-top: 40px;
-    padding-bottom: 58px;
+    padding-bottom: 0;
   }
 }
 </style>

@@ -238,7 +238,7 @@ export default {
       font-size: 13px;
       line-height: 16px;
       max-width: 320px;
-      margin: 0 auto 248px;
+      margin: 0 auto 348px;
     }
   }
 
@@ -248,7 +248,7 @@ export default {
     @media (max-width: 1000px) {
       max-width: 440px;
       width: calc(100% + 50px);
-      max-height: 220px;
+      max-height: 320px;
       object-fit: cover;
       object-position: center;
       position: absolute;
@@ -256,12 +256,20 @@ export default {
       left: 50%;
       right: 0;
       transform: translateX(-50%);
+
+      img {
+        max-width: 440px;
+        width: calc(100% + 50px);
+        max-height: 320px;
+      }
     }
 
     &:deep {
       .swiper-button-prev,
       .swiper-button-next {
-        opacity: 0;
+        @media (min-width: 1000px) {
+          opacity: 0;
+        }
         transition: opacity 0.3s;
       }
     }

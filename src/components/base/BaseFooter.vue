@@ -28,27 +28,39 @@
       <div class="footer__item">
         <p class="footer__title">We are welcoming you</p>
         <p class="footer__subtitle">Want to visit our clinic?</p>
-        <p class="footer__text">Saturday - Thrusday</p>
-        <p class="footer__text">10 am- 9 pm</p>
+        <p class="footer__text">Mon - Fr &nbsp;9 ам - 5 рм</p>
+        <p class="footer__text">Saturday&nbsp;9 ам - 15 рм</p>
+        <p class="footer__text">Sunday - closed</p>
       </div>
       <div class="footer__item">
         <p class="footer__title">Important link</p>
         <div class="footer__links">
           <div class="footer__links-list">
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
-          </div>
-          <div class="footer__links-list">
-            <a href="">Career</a>
+            <a
+              href="https://www.facebook.com/people/OasisDental/100072089651296/?mibextid=LQQJ4d"
+              >Facebook</a
+            >
+            <a
+              href="https://instagram.com/oasisdentalhallandale?igshid=NDk5N2NlZjQ="
+              >Instagram</a
+            >
             <a href="">Privacy policy</a>
           </div>
         </div>
       </div>
       <div class="footer__item">
         <p class="footer__title">Say hello to us</p>
-        <p class="footer__email">hello@xxxxx.com</p>
-        <p class="footer__text">Address</p>
-        <p class="footer__text">XXX XXXX</p>
+        <p class="footer__email">
+          <a href="tel:3052399855">
+            <span> +(847) 947-2651 </span>
+          </a>
+        </p>
+        <p class="footer__text">Address:</p>
+        <p class="footer__text">
+          3363 NE 163rd St <br />
+          Unit 807<br />
+          North Miami Beach, FL 33160
+        </p>
       </div>
     </div>
     <div class="copir">© 2023, All Rights Reserved</div>

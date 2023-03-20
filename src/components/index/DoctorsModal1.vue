@@ -9,19 +9,23 @@
         alt=""
       />
     </div>
-
     <div class="modal__content">
-      <p class="modal__name">Dr. Kateryna Yuryk</p>
-      <p class="modal__position">General Orthodontist</p>
+      <p class="modal__name">Dк. Gary Beyer</p>
+      <p class="modal__position">General Dentist / Owner</p>
       <p class="modal__text">
-        Kateryna Yuryk, CRDH is a 2007 graduate of the dental hygiene program at
-        the University of Illinois Chicago College of Dentistry. Every year
-        Kateryna takes continued education classes to implement the newest
-        technologies in patient care. Kateryna has great experience in
-        non-surgical periodontal therapy, prophylaxis therapy, and cosmetic oral
-        treatments. She is passionate about educating her patients on oral
-        health, and helping to save and preserve their smiles for years to come
-        with her gentle touch.
+        Dr. Gary Beyer is the owner of NextGen Dental & Orthodontics and has
+        been providing excellent dental care to his patients for over 24 years.
+        Dr. Beyer practices general dentistry and specializes in full mouth
+        reconstruction and cosmetic dentistry.
+        <br />
+        <br />
+        Dr. Beyer earned his Bachelor of Science degree and his Doctorate in
+        Dentistry degree from St. Petersburg School of Stomatology in 1986. His
+        Doctor of Dental Surgery degree was earned at Marquette University
+        School of Dentistry in 1993 and he has been working as a dentist ever
+        since. He is a proud member of the American Dental Association, the
+        Illinois State Dental Society, the Chicago Dental Society, and is
+        Invisalign Certified.
       </p>
       <div class="modal__slide">
         <swiper
@@ -115,6 +119,7 @@
     </fullscreen>
   </div>
 </template>
+
 <script>
 import BaseButton from "@/components/base/BaseButton.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";

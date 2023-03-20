@@ -9,11 +9,14 @@
         v-for="(item, index) in list"
         :key="index"
         :content="item"
-        @click="showModal = true"
+        @modal="() => openModal(index)"
       />
     </div>
     <base-modal :is-open="showModal" @close="showModal = false">
-      <doctors-modal />
+      <doctors-modal @close="showModal = false" />
+    </base-modal>
+    <base-modal :is-open="showModal1" @close="showModal1 = false">
+      <doctors-modal1 @close="showModal1 = false" />
     </base-modal>
   </section>
 </template>
@@ -22,13 +25,15 @@
 import DoctorCard from "@/components/index/DoctorCard.vue";
 import BaseModal from "@/components/base/BaseModal.vue";
 import DoctorsModal from "@/components/index/DoctorsModal.vue";
+import DoctorsModal1 from "@/components/index/DoctorsModal1.vue";
 
 export default {
-  components: { DoctorsModal, BaseModal, DoctorCard },
+  components: { DoctorsModal1, DoctorsModal, BaseModal, DoctorCard },
 
   data() {
     return {
       showModal: false,
+      showModal1: false,
       list: [
         {
           name: "Dr. Kateryna Yuryk",
@@ -37,14 +42,25 @@ export default {
           img: "d1@2x",
         },
         {
-          name: "Dr. Jack Jhones",
-          position: "General Orthodontist",
-          text: "Personable dentist with 12 years of experience improving oral health so that patients can smile confidently. Skills include ICON Aesthetic Infiltration, Restorative Procedures, Crowns, Bridges & Veneers, and ICON Aesthetic Infiltration.",
+          name: "Dк. Gary Beyer",
+          position: "General Dentist / Owner",
+          text: "Dr. Gary Beyer is the owner of NextGen Dental & Orthodontics and has been providing excellent dental care to his patients for over 24 years. Dr. Beyer practices general dentistry and specializes in full mouth reconstruction and cosmetic dentistry.",
           img: "d2@2x",
           reverse: true,
         },
       ],
     };
+  },
+
+  methods: {
+    openModal(key) {
+      if (key === 0) {
+        this.showModal = true;
+      }
+      if (key === 1) {
+        this.showModal1 = true;
+      }
+    },
   },
 };
 </script>

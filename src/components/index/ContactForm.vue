@@ -21,27 +21,6 @@
         placeholder="+01 (555) 000-0000"
         :error-list="phoneErrors"
       />
-      <div class="form__input">
-        <p class="date-label">Date</p>
-        <date-picker
-          v-model:value="form.date"
-          placeholder="YYYY-DD-MM"
-          class="datepick"
-        ></date-picker>
-      </div>
-      <base-dropdown
-        item-key="name"
-        label="Doctor"
-        placeholder="Dr. XXX XXXX"
-        :id="'selectDoctor'"
-        v-model="form.doctor"
-        name="selectType"
-        :id-dropdown="'selectDoctor'"
-        :list="doctorList"
-        filter-off
-        class="form__input"
-        @selected="(value) => setDoctor(value)"
-      />
       <base-input
         textarea
         rows="5"
@@ -60,7 +39,7 @@
         class="form__checkbox"
       />
       <base-button class="form__btn" type="submit" :disabled="!formIsValid">
-        Confirm Appoinment
+        Send message
       </base-button>
     </form>
     <base-loader v-if="loading && !success" class="form__loader" />
@@ -74,19 +53,15 @@ import BaseButton from "@/components/base/BaseButton";
 import BaseLoader from "@/components/base/BaseLoader";
 import IconFormSuccess from "@/components/icon/IconFormSuccess";
 import BaseCheckbox from "@/components/base/BaseCheckbox.vue";
-import DatePicker from "vue-datepicker-next";
 import "vue-datepicker-next/index.css";
-import BaseDropdown from "@/components/base/BaseDropdown.vue";
 
 export default {
   components: {
-    BaseDropdown,
     BaseCheckbox,
     IconFormSuccess,
     BaseLoader,
     BaseButton,
     BaseInput,
-    DatePicker,
   },
   data() {
     return {
@@ -155,7 +130,6 @@ export default {
   margin-left: auto;
 
   @media (max-width: 1000px) {
-    padding-top: 30px;
     padding-left: 0;
     min-height: 478px;
   }
@@ -168,15 +142,7 @@ export default {
 
   &__input {
     margin-bottom: 12px;
-    width: calc(50% - 20px);
-
-    &:nth-child(odd) {
-      margin-right: 20px;
-    }
-
-    &:nth-child(even) {
-      margin-left: 20px;
-    }
+    width: 100%;
 
     @media (max-width: 1000px) {
       width: calc(50% - 10px);

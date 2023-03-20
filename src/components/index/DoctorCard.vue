@@ -15,7 +15,7 @@
       </p>
       <div class="card__btns">
         <base-button>Book Appointment</base-button>
-        <base-button black>Read More</base-button>
+        <base-button black @click="$emit('modal')">Read More</base-button>
       </div>
     </div>
   </div>

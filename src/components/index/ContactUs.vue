@@ -6,13 +6,7 @@
       </div>
       <div class="contact__main">
         <div class="contact__left">
-          <img
-            class="contact__img"
-            src="../../assets/images/contact.png"
-            width="540"
-            height="502"
-            alt="contact"
-          />
+          <contact-map />
         </div>
         <div class="contact__right">
           <contact-form />
@@ -48,10 +42,11 @@
   }
 
   &__left {
+    width: 100%;
+    max-width: 55%;
     @media (max-width: 1000px) {
       position: relative;
-      margin-bottom: 240px;
-      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -80,4 +75,5 @@
 </style>
 <script setup>
 import ContactForm from "@/components/index/ContactForm.vue";
+import ContactMap from "@/components/index/ContactMap.vue";
 </script>
