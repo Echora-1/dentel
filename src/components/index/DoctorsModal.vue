@@ -26,25 +26,13 @@
           :navigation="true"
         >
           <swiper-slide>
-            <fullscreen v-model="fullscreen">
-              <img
-                @click="toggle"
-                src="../../assets/images/diploms/all.png"
-                width="124"
-                height="142"
-                alt=""
-                v-if="!fullscreen"
-              />
-              <div v-else class="fullscreen-wrap" @click="toggle">
-                <img
-                  src="../../assets/images/diploms/all.png"
-                  width="622"
-                  height="480"
-                  alt=""
-                  style="margin: auto"
-                />
-              </div>
-            </fullscreen>
+            <img
+              @click="toggle"
+              src="../../assets/images/diploms/all.png"
+              width="124"
+              height="142"
+              alt=""
+            />
           </swiper-slide>
           <swiper-slide>
             <img
@@ -66,6 +54,17 @@
       </div>
       <base-button class="modal__btn">Book Appointment</base-button>
     </div>
+    <fullscreen v-model="fullscreen">
+      <div v-if="fullscreen" class="fullscreen-wrap" @click="toggle">
+        <img
+          src="../../assets/images/diploms/all.png"
+          width="622"
+          height="480"
+          alt=""
+          style="margin: auto"
+        />
+      </div>
+    </fullscreen>
   </div>
 </template>
 
