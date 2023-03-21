@@ -1,7 +1,7 @@
 <template>
   <div :class="['card', { 'card--reverse': content.reverse }]">
     <img
-      :src="require('../../assets/images/doctors/' + content.img + '.png')"
+      :src="require('../../assets/images/doctors/' + content.img)"
       width="540"
       height="540"
       alt="doctors"
@@ -65,6 +65,7 @@ export default {
     object-fit: contain;
     border-radius: 50%;
     border: 4px solid #ffffff;
+    background: #606e8a;
 
     @media (max-width: 1000px) {
       flex-direction: column;

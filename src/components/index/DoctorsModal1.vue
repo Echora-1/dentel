@@ -3,7 +3,7 @@
     <div class="modal__header" @click="$emit('close')">
       <img
         class="modal__img"
-        src="../../assets/images/modal/d1.png"
+        src="../../assets/images/doctors/d2@2x.jpeg"
         width="172"
         height="172"
         alt=""
@@ -175,7 +175,7 @@ export default {
     left: 50%;
     bottom: 0;
     transform: translate(-50%, 50%);
-
+    background: #606e8a;
     @media (max-width: 767px) {
       width: 86px;
       height: 86px;

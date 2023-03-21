@@ -14,15 +14,9 @@
           committed to providing the best dental services for patients
         </p>
         <div class="footer__social">
-          <a
-            href="https://instagram.com/oasisdentalhallandale?igshid=NDk5N2NlZjQ="
-            ><IconInst
-          /></a>
+          <a href=""><IconInst /></a>
           <a href=""><IconWhat /></a>
-          <a
-            href="https://www.facebook.com/people/OasisDental/100072089651296/?mibextid=LQQJ4d"
-            ><IconFace
-          /></a>
+          <a href=""><IconFace /></a>
         </div>
       </div>
       <div class="footer__item">
@@ -36,14 +30,8 @@
         <p class="footer__title">Important link</p>
         <div class="footer__links">
           <div class="footer__links-list">
-            <a
-              href="https://www.facebook.com/people/OasisDental/100072089651296/?mibextid=LQQJ4d"
-              >Facebook</a
-            >
-            <a
-              href="https://instagram.com/oasisdentalhallandale?igshid=NDk5N2NlZjQ="
-              >Instagram</a
-            >
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
             <a href="">Privacy policy</a>
           </div>
         </div>
@@ -51,8 +39,8 @@
       <div class="footer__item">
         <p class="footer__title">Say hello to us</p>
         <p class="footer__email">
-          <a href="tel:3052399855">
-            <span> +(847) 947-2651 </span>
+          <a href="tel:8479472651">
+            <span> (847) 947-2651 </span>
           </a>
         </p>
         <p class="footer__text">Address:</p>

@@ -15,7 +15,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Dental Emergency</p>
+          <p class="card__title">Air-flow cleaning</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>
@@ -30,7 +30,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Orthodontic Treatment</p>
+          <p class="card__title">Dental Emergency</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>
@@ -45,7 +45,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Dental Crown</p>
+          <p class="card__title">Orthodontic Treatment</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>
@@ -60,7 +60,37 @@
           class="card__img"
         />
         <div class="card__text">
+          <p class="card__title">Dental Crown</p>
+          <p class="card__subtitle">
+            Your treatment experience will be relaxing & smooth.
+          </p>
+        </div>
+      </div>
+      <div class="card card5">
+        <img
+          src="../../assets/images/services/s1@2x.png"
+          width="593"
+          height="190"
+          alt="services"
+          class="card__img"
+        />
+        <div class="card__text">
           <p class="card__title">Dental Extraction and Implants</p>
+          <p class="card__subtitle">
+            Your treatment experience will be relaxing & smooth.
+          </p>
+        </div>
+      </div>
+      <div class="card card6">
+        <img
+          src="../../assets/images/services/s2@2x.png"
+          width="593"
+          height="190"
+          alt="services"
+          class="card__img"
+        />
+        <div class="card__text">
+          <p class="card__title">Dental Cleaning</p>
           <p class="card__subtitle">
             Your treatment experience will be relaxing & smooth.
           </p>
@@ -104,7 +134,7 @@
   &__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 55px;
     grid-row-gap: 55px;
 
@@ -193,6 +223,14 @@
 }
 .card4 {
   grid-area: 2 / 2 / 3 / 3;
+  justify-self: end;
+}
+
+.card5 {
+  grid-area: 3 / 1 /4 / 2;
+}
+.card6 {
+  grid-area: 3 / 2 / 4 / 3;
   justify-self: end;
 }
 </style>

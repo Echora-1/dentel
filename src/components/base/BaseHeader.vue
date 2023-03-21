@@ -9,19 +9,11 @@
         class="header__logo"
       />
       <nav class="header__nav">
-        <a
-          class="header__nav-icon"
-          href="https://instagram.com/oasisdentalhallandale?igshid=NDk5N2NlZjQ="
-          ><IconInst
-        /></a>
-        <a
-          class="header__nav-icon"
-          href="https://www.facebook.com/people/OasisDental/100072089651296/?mibextid=LQQJ4d"
-          ><IconFace
-        /></a>
-        <a class="header__phone" href="tel:3052399855">
+        <a class="header__nav-icon" href=""><IconInst /></a>
+        <a class="header__nav-icon" href=""><IconFace /></a>
+        <a class="header__phone" href="tel:8479472651">
           <icon-phone />
-          <span> +(847) 947-2651 </span>
+          <span> (847) 947-2651 </span>
         </a>
         <base-button>Book Appointment</base-button>
       </nav>

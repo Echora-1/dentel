@@ -18,7 +18,7 @@
         name="phone"
         class="form__input"
         label="Phone"
-        placeholder="+01 (555) 000-0000"
+        placeholder="(555) 000-0000"
         :error-list="phoneErrors"
       />
       <base-input

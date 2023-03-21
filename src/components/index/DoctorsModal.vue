@@ -169,6 +169,7 @@ export default {
     position: absolute;
     left: 50%;
     bottom: 0;
+    background: #606e8a;
     transform: translate(-50%, 50%);
 
     @media (max-width: 767px) {

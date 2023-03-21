@@ -4,10 +4,21 @@
       <div class="about__left">
         <h2 class="base-title">About <span>our clinic</span></h2>
         <p class="about__mb-text">
-          At our Clinic, your comfort is our highest priority for family dental
-          care. You can relax in our dental chair knowing that we offer the
-          latest advances in the industry. As specialized practitioners, we are
-          comfortable with patients of all ages.
+          NextGen Dental & Orthodontics is committed to providing the best
+          dental services for patients in Miami, FL and the surrounding area.
+          Not only do we take pride in the quality of care that we offer, but we
+          are also dedicated to implementing the latest technology that is
+          available in the dental industry. We invite you to visit our office to
+          learn about our excellent services that can improve your smile. Our
+          office is designed with your comfort in mind. We focus on the details
+          that will improve your experience: beautiful décor, comfortable
+          chairs, and high-quality treatments. You can relax knowing that you
+          selected a dental team that you can trust. Sanitation and safety are
+          priorities for our team. We are thorough with hygiene while using the
+          leading technological advances in the industry. These quality tools
+          provide optimal results for your dental care. Staying up-to-date in
+          the dental industry allows us to offer the best treatments focused on
+          accuracy and efficiency.
         </p>
         <div class="about__img">
           <swiper
@@ -61,31 +72,25 @@
       </div>
       <div class="about__right">
         <p class="text">
-          At our Clinic, your comfort is our highest priority for family dental
-          care. You can relax in our dental chair knowing that we offer the
-          latest advances in the industry. As specialized practitioners, we are
-          comfortable with patients of all ages.
+          NextGen Dental & Orthodontics is committed to providing the best
+          dental services for patients in Miami, FL and the surrounding area.
+          Not only do we take pride in the quality of care that we offer, but we
+          are also dedicated to implementing the latest technology that is
+          available in the dental industry. We invite you to visit our office to
+          learn about our excellent services that can improve your smile. Our
+          office is designed with your comfort in mind. We focus on the details
+          that will improve your experience: beautiful décor, comfortable
+          chairs, and high-quality treatments. You can relax knowing that you
+          selected a dental team that you can trust. Sanitation and safety are
+          priorities for our team. We are thorough with hygiene while using the
+          leading technological advances in the industry. These quality tools
+          provide optimal results for your dental care. Staying up-to-date in
+          the dental industry allows us to offer the best treatments focused on
+          accuracy and efficiency.
         </p>
 
         <div class="about__what">
           <p class="about__title"><span>?</span> WHAT WE PROVIDE</p>
-          <p>
-            NextGen Dental & Orthodontics is committed to providing the best
-            dental services for patients in Miami, FL and the surrounding area.
-            Not only do we take pride in the quality of care that we offer, but
-            we are also dedicated to implementing the latest technology that is
-            available in the dental industry. We invite you to visit our office
-            to learn about our excellent services that can improve your smile.
-            Our office is designed with your comfort in mind. We focus on the
-            details that will improve your experience: beautiful décor,
-            comfortable chairs, and high-quality treatments. You can relax
-            knowing that you selected a dental team that you can trust.
-            Sanitation and safety are priorities for our team. We are thorough
-            with hygiene while using the leading technological advances in the
-            industry. These quality tools provide optimal results for your
-            dental care. Staying up-to-date in the dental industry allows us to
-            offer the best treatments focused on accuracy and efficiency.
-          </p>
           <div class="about__items">
             <div class="about__list">
               <p class="about__item" v-for="(item, index) in list" :key="index">
@@ -155,6 +160,7 @@ export default {
   padding-left: 72px;
   border-bottom: 1px solid rgba(82, 82, 91, 0.25);
   position: relative;
+  margin-bottom: 55px;
 
   &:before {
     content: "";
@@ -191,6 +197,7 @@ export default {
     z-index: 1;
     display: flex;
     flex-direction: column;
+    margin-bottom: -5px;
 
     &::before {
       content: "";
@@ -267,6 +274,7 @@ export default {
     &:deep {
       .swiper-button-prev,
       .swiper-button-next {
+        color: #0c7ac2;
         @media (min-width: 1000px) {
           opacity: 0;
         }
