@@ -3,7 +3,7 @@
     <div class="modal__header" @click="$emit('close')">
       <img
         class="modal__img"
-        src="../../assets/images/doctors/d2@2x.jpeg"
+        src="../../assets/images/modal/d2.png"
         width="172"
         height="172"
         alt=""
@@ -13,12 +13,6 @@
       <p class="modal__name">Dк. Gary Beyer</p>
       <p class="modal__position">General Dentist / Owner</p>
       <p class="modal__text">
-        Dr. Gary Beyer is the owner of NextGen Dental & Orthodontics and has
-        been providing excellent dental care to his patients for over 24 years.
-        Dr. Beyer practices general dentistry and specializes in full mouth
-        reconstruction and cosmetic dentistry.
-        <br />
-        <br />
         Dr. Beyer earned his Bachelor of Science degree and his Doctorate in
         Dentistry degree from St. Petersburg School of Stomatology in 1986. His
         Doctor of Dental Surgery degree was earned at Marquette University

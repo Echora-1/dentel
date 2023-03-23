@@ -89,7 +89,7 @@
           accuracy and efficiency.
         </p>
 
-        <div class="about__what">
+        <!--        <div class="about__what">
           <p class="about__title"><span>?</span> WHAT WE PROVIDE</p>
           <div class="about__items">
             <div class="about__list">
@@ -109,20 +109,19 @@
               </p>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import IconSec from "@/components/icon/IconSec.vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/core";
 
 export default {
-  components: { IconSec, Swiper, SwiperSlide },
+  components: { Swiper, SwiperSlide },
   data() {
     return {
       list: [
@@ -145,8 +144,8 @@ export default {
 
 <style lang="scss" scoped>
 .base-title {
-  margin-top: 42px;
-  margin-bottom: 56px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 
   @media (max-width: 1000px) {
     margin-top: 25px;
@@ -156,13 +155,10 @@ export default {
 
 .text {
   display: inline-block;
-  padding-bottom: 40px;
   padding-left: 72px;
-  border-bottom: 1px solid rgba(82, 82, 91, 0.25);
   position: relative;
-  margin-bottom: 55px;
 
-  &:before {
+  /*  &:before {
     content: "";
     height: 0;
     width: 558px;
@@ -171,7 +167,7 @@ export default {
     bottom: -1px;
     left: 0;
     transform: translateX(-100%);
-  }
+  }*/
 
   @media (max-width: 1000px) {
     display: none;
@@ -223,8 +219,6 @@ export default {
 
   &__left,
   &__right {
-    padding-top: 72px;
-
     @media (max-width: 1000px) {
       padding-top: 0;
       max-width: 100%;
@@ -235,6 +229,8 @@ export default {
 
   &__right {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
   }
 
   &__mb-text {
@@ -251,6 +247,7 @@ export default {
 
   &__img {
     margin-top: auto;
+    border-top: 2px solid #0c7ac2;
 
     @media (max-width: 1000px) {
       max-width: 440px;

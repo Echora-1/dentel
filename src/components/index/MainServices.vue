@@ -15,10 +15,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Air-flow cleaning</p>
-          <p class="card__subtitle">
-            Your treatment experience will be relaxing & smooth.
-          </p>
+          <p class="card__title">Dental Emergency</p>
         </div>
       </div>
       <div class="card card2">
@@ -30,10 +27,7 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Dental Emergency</p>
-          <p class="card__subtitle">
-            Your treatment experience will be relaxing & smooth.
-          </p>
+          <p class="card__title">Orthodontic Treatment</p>
         </div>
       </div>
       <div class="card card3">
@@ -43,12 +37,10 @@
           height="190"
           alt="services"
           class="card__img"
+          style="object-fit: cover"
         />
         <div class="card__text">
-          <p class="card__title">Orthodontic Treatment</p>
-          <p class="card__subtitle">
-            Your treatment experience will be relaxing & smooth.
-          </p>
+          <p class="card__title">Dental Crown</p>
         </div>
       </div>
       <div class="card card4">
@@ -60,40 +52,33 @@
           class="card__img"
         />
         <div class="card__text">
-          <p class="card__title">Dental Crown</p>
-          <p class="card__subtitle">
-            Your treatment experience will be relaxing & smooth.
-          </p>
+          <p class="card__title">Dental Cleaning</p>
         </div>
       </div>
       <div class="card card5">
         <img
-          src="../../assets/images/services/s1@2x.png"
+          src="../../assets/images/services/s5@2x.png"
           width="593"
           height="190"
           alt="services"
           class="card__img"
+          style="object-fit: cover"
         />
         <div class="card__text">
           <p class="card__title">Dental Extraction and Implants</p>
-          <p class="card__subtitle">
-            Your treatment experience will be relaxing & smooth.
-          </p>
         </div>
       </div>
       <div class="card card6">
         <img
-          src="../../assets/images/services/s2@2x.png"
+          src="../../assets/images/services/s6@2x.png"
           width="593"
           height="190"
           alt="services"
           class="card__img"
+          style="object-fit: cover"
         />
         <div class="card__text">
-          <p class="card__title">Dental Cleaning</p>
-          <p class="card__subtitle">
-            Your treatment experience will be relaxing & smooth.
-          </p>
+          <p class="card__title">Air-flow cleaning</p>
         </div>
       </div>
     </div>

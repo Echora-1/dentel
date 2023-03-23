@@ -45,7 +45,7 @@ export default {
           name: "Dк. Gary Beyer",
           position: "General Dentist / Owner",
           text: "Dr. Gary Beyer is the owner of NextGen Dental & Orthodontics and has been providing excellent dental care to his patients for over 24 years. Dr. Beyer practices general dentistry and specializes in full mouth reconstruction and cosmetic dentistry.",
-          img: "d2@2x.jpeg",
+          img: "d2@2x.png",
           reverse: true,
         },
       ],
