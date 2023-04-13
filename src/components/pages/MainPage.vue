@@ -48,14 +48,4 @@ export default {
     margin-bottom: 40px;
   }
 }
-
-.section-contact {
-  padding-top: 87px;
-  padding-bottom: 107px;
-
-  @media (max-width: 1000px) {
-    padding-top: 40px;
-    padding-bottom: 0;
-  }
-}
 </style>

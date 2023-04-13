@@ -1,13 +1,15 @@
 <template>
   <header class="header">
     <div class="container header__container">
-      <img
-        src="../../assets/images/logo@2x.png"
-        width="153"
-        height="63"
-        alt="logo"
-        class="header__logo"
-      />
+      <router-link to="/" class="header__logo">
+        <img
+          src="../../assets/images/logo@2x.png"
+          width="153"
+          height="63"
+          alt="logo"
+        />
+      </router-link>
+
       <nav class="header__nav">
         <a class="header__nav-icon" href=""><IconInst /></a>
         <a class="header__nav-icon" href=""><IconFace /></a>
@@ -89,8 +91,10 @@ export default {
 @media (max-width: 1000px) {
   .header {
     &__logo {
-      width: 78px;
-      height: 32px;
+      img {
+        width: 78px;
+        height: 32px;
+      }
     }
 
     &__phone {

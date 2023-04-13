@@ -19,6 +19,13 @@
 <style lang="scss" scoped>
 .contact {
   background: rgba(255, 255, 255, 1);
+  padding-top: 87px;
+  padding-bottom: 107px;
+
+  @media (max-width: 1000px) {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
 
   &__header {
     padding-bottom: 20px;
