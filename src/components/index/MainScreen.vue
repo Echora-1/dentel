@@ -166,6 +166,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 250px;
+    background-color: #0c7ac2;
 
     @media (max-width: 1000px) {
       background-position: right;

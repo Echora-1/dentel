@@ -37,6 +37,7 @@
   min-height: 553px;
   display: flex;
   align-items: center;
+  background-color: #0c7ac2;
 
   @media (max-width: 1000px) {
     min-height: 420px;
